@@ -1,0 +1,22 @@
+{
+  "name": "keep",
+  "version": "1.0.0",
+  "description": "notes keeping application",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server.js",
+    "server":"nodemon server.js",
+    "keeper":"npm start --prefix keeper",
+    "dev":"concurrently \"npm run server\" \"npm run keeper\"",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix keeper && npm run build --prefix keeper"
+  },
+  "keywords": [],
+  "author": "Umesh Raut",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24"
+  }
+}
