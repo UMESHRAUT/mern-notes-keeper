@@ -1,9 +1,9 @@
 # mern-notes-keeper
 Developed using:
 
-Mongodb - (Mongoose)
-Express.js as the server
-React as the frontend library
+Mongodb - (Mongoose)\n
+Express.js as the server\n
+React as the frontend library\n
 Node
 steps to run the app
 first install npm & nodemon if installed already skip this step:
